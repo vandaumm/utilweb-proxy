@@ -28,7 +28,7 @@ export default async function handler(req, res) {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        inputs: [{ role: "user", content: prompt }],
+        inputs: prompt,
         parameters: {
           max_new_tokens: 200,
           return_full_text: false,

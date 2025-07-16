@@ -21,7 +21,7 @@ export default async function handler(request, response) {
         }
 
         // Usando o modelo mais simples e confiável para o teste final
-        const apiUrl = "https://api-inference.huggingface.co/models/distilbert-base-uncased-finetuned-sst-2-english";
+        const apiUrl = "https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0";
         
         const hfResponse = await fetch(apiUrl, {
             method: 'POST',
